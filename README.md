@@ -68,7 +68,7 @@ Diameter and material are also reconstructed for Montpellier only, using a topol
 
 Each network is selected inside a notebook via a `choice`/`network` variable
 at the top; the reconstruction logic itself lives entirely in
-`code/function.py` and is shared across networks and notebooks
+`Code/function.py` and is shared across networks and notebooks
 (`from function import *`).
 
 ## Data & Licensing
@@ -109,7 +109,7 @@ from a different source — Auckland Council Open Data — and are licensed
 under CC BY 4.0, the same permissive terms as Kapiti Coast: reuse and
 adaptation are permitted with attribution.
 
-**Code licence.** The code in code/ (all .py and .ipynb files) is independent of the above data licences and is distributed under CeCILL-B v1.0 — see LICENSE at the repository root. Reconstructed attribute tables produced by running this code on the Angers/Montpellier data (ODbL sources) are themselves Derivative Databases and, if published, must remain under ODbL v1.0 with attribution to the original source.
+**Code licence.** The code in Code/ (all .py and .ipynb files) is independent of the above data licences and is distributed under CeCILL-B v1.0 — see LICENSE at the repository root. Reconstructed attribute tables produced by running this code on the Angers/Montpellier data (ODbL sources) are themselves Derivative Databases and, if published, must remain under ODbL v1.0 with attribution to the original source.
 
 ## Requirements
 
@@ -135,11 +135,11 @@ jupyter_client==8.6.3
 1. Place the pre-processed pipe/node tables for a network under
    `data/<City>/` (see the corresponding preprocessing notebook for the
    expected format).
-2. Open `code/rimElevation.ipynb`, set the `choice` variable to the target
+2. Open `Code/rimElevation.ipynb`, set the `choice` variable to the target
    network, and run all cells to detect, correct, and predict rim elevation.
-3. Open `code/invertElevation.ipynb` (requires the rim-elevation output from
+3. Open `Code/invertElevation.ipynb` (requires the rim-elevation output from
    step 2) to reconstruct invert elevation.
-4. Open `code/diameter_material_Montpellier.ipynb` (only for Montpellier) to
+4. Open `Code/diameter_material_Montpellier.ipynb` (only for Montpellier) to
    reconstruct diameter and material.
 
 ## Citation
@@ -160,4 +160,4 @@ also cite:
 
 ## License
 
-The code in this repository (code/) is licensed under CeCILL-B, a French free-software license drafted by CEA, CNRS and INRIA, fully compatible in spirit with BSD/MIT-style licenses. See the "Data & Licensing" section above for the data licences, which are separate and unmodified from their original sources.
+The code in this repository (Code/) is licensed under CeCILL-B, a French free-software license drafted by CEA, CNRS and INRIA, fully compatible in spirit with BSD/MIT-style licenses. See the "Data & Licensing" section above for the data licences, which are separate and unmodified from their original sources.
