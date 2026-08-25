@@ -35,7 +35,7 @@ Diameter and material are also reconstructed for Montpellier only, using a topol
 .
 ├── README.md
 ├── LICENSE
-├── code/
+├── Code/
 │   ├── function.py                           # shared reconstruction library (all methods)
 │   ├── rimElevation.ipynb                    # rim elevation: correction + prediction, all 4 networks
 │   ├── invertElevation.ipynb                 # invert elevation: Method 1 (all networks) + Method 2 (Montpellier)
