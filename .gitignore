@@ -1,0 +1,76 @@
+# Secrets — ne JAMAIS committer
+token.txt
+*.env
+.env
+
+# Environnement Python / notebooks
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+
+# MLflow
+mlflow.db
+mlflow_reconstruction.db
+mlruns/
+
+# Résultats intermédiaires / données de travail (hors data/ et Code/)
+/*.csv
+*.pkl
+*.gpickle
+results_invert/
+tile_cache/
+lidar_ref/
+RGEALTI_Angers/
+RGEALTI_Montpellier/
+image_rapport/
+images_publi/
+wastewater_graph_project/
+
+# Fichiers de travail / brouillons / doublons
+*- Copie*.ipynb
+*- Copie*.py
+*.zip
+
+# Notebooks et scripts de travail isolés à la racine
+# (les versions officielles vivent dans Code/)
+/Angers.ipynb
+/Auckland.ipynb
+/Diameter.ipynb
+/GNN.ipynb
+/KapitiCoast.ipynb
+/ML_TurtleFile.ipynb
+/analyseDF.ipynb
+/invertElevation.ipynb
+/rimElevation.ipynb
+/test.ipynb
+/function.py
+/make_chains_figure.py
+
+# Fichiers de données de travail isolés à la racine
+# (les versions officielles vivent dans data/)
+/Auckland_Nouvelle-Zélande.csv
+/Canalisation_PlaineVallée.csv
+/Montpellier_2026_tuyaux.csv
+/RDF_wastewater.rdf
+/SewerRDF.ttl
+/SewerRDF_nouveau.ttl
+/df_node.csv
+/df_pipe.csv
+/pipes_extract.csv
+/regard_Ancey.json
+/resultInvertInjectAnomalie.csv
+/réseau_Normandie.csv
+
+# Fichiers CSV de résultats expérimentaux (grid search, comparaisons...)
+*Reconstruction*.csv
+*Prediction*.csv
+compareRealReconstruction*.csv
+rim_test*.csv
+results_invert*.csv
+Rim*Reconstruction*.csv
+
+# Autres sorties générées
+*.png
+*.pdf
+*.pptx
+graph_connected.gpkg

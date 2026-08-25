@@ -1,0 +1,6 @@
+.ipynb_checkpoints/
+__pycache__/
+analyseDF.ipynb
+diameter_Montpellier.ipynb
+invertElevation_Montpellier.ipynb
+rimElevation_Montpellier.ipynb
